@@ -1,6 +1,15 @@
 # Use container-based infrastructure:
 sudo: false
 
+addons:
+  apt:
+    packages:
+      - libX11-dev
+      - libxext-dev
+      - libxrender-dev
+      - libxtst-dev
+      - libxt-dev
+
 jdk:
   - oraclejdk7
 
