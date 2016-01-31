@@ -9,6 +9,7 @@ addons:
       - libxrender-dev
       - libxtst-dev
       - libxt-dev
+      - libcups2-dev
 
 jdk:
   - oraclejdk7
