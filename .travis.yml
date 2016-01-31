@@ -10,6 +10,7 @@ addons:
       - libxtst-dev
       - libxt-dev
       - libcups2-dev
+      - libasound2-dev
 
 jdk:
   - oraclejdk7
