@@ -1,0 +1,7 @@
+# Use container-based infrastructure:
+sudo: false
+
+jdk:
+  - oraclejdk7
+
+script: ./travis.sh
