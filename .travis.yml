@@ -1,10 +1,18 @@
-sudo: required
+# Use container-based infrastructure:
+sudo: false
 
-services:
-  - docker
+addons:
+  apt:
+    packages:
+      - libX11-dev
+      - libxext-dev
+      - libxrender-dev
+      - libxtst-dev
+      - libxt-dev
+      - libcups2-dev
+      - libasound2-dev
 
-script:
-  - docker build -t test .
+jdk:
+  - oraclejdk7
 
-notifications:
-  email: false
+script: ./travis.sh
